@@ -1,0 +1,222 @@
+.hero-section {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-image img {
+    margin-left: 185px;
+    margin-top: 25px;
+    width:95%;
+    height: 95%;
+    object-fit: contain;
+}
+
+.hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.hero-bg1 {
+    position: absolute;
+    padding: 50px;
+    bottom: 0;
+    font-size: 35px;
+
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    opacity: 1;
+}
+
+.hero-bg2 {
+    position: absolute;
+    padding: 100px;
+    bottom: 0;
+    font-size: 35px;
+
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.hero-bg3 {
+    position: absolute;
+    padding: 150px;
+    bottom: 0;
+    font-size: 35px;
+
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.hero-content {
+    flex: 1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero-content-info {
+    padding: 90px;
+    padding-left: 125px;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content-info h1 {
+    font-size: 50px;
+    width: 110%;
+    font-weight: 600px;
+    font-family: var(--plus-jakarta-sans);
+}
+
+.hero-content-info p {
+    margin: 12px 0 0 0;
+    font-size: 20px;
+    font-family: var(--plus-jakarta-sans);
+}
+
+.hero-content-buttons {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-content-buttons-order {
+    padding: 10px;
+    border-radius: 36px;
+    min-width: 200px;
+    outline: none;
+    border: none;
+    background-color: palevioletred;
+
+    cursor: pointer;
+
+    color: #fff;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hero-content-testimonials {
+    padding: 32px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--color-white);
+}
+
+.hero-content-customers {
+    flex: 1;
+    gap: 10px;
+}
+
+.hero-content-customers h4 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--playfair-display);
+}
+
+.hero-content-customers p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+.hero-content-review {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    border-left: 1px solid gainsboro;
+    min-width: 200px;
+}
+
+.hero-content-review img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.hero-content-review p {
+    font-size: 14px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-image img {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-bg1 {
+        position: absolute;
+        padding: 20px;
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .hero-bg2 {
+        position: absolute;
+        padding: 50px;
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .hero-bg3 {
+        position: absolute;
+        padding: 80px;
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .hero-content-info {
+        padding: 40px;
+        padding-left: 20px;
+    }
+
+    .hero-content-info h1 {
+        font-size: 30px;
+    }
+
+    .hero-content-info p {
+        font-size: 16px;
+    }
+
+    .hero-content-buttons-order {
+        min-width: auto;
+        padding: 8px 16px;
+        margin-right: 10px;
+    }
+}

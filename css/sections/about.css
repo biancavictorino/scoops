@@ -1,0 +1,151 @@
+.about-us {
+    display: flex;
+    min-height: 720px;
+    overflow: hidden;
+}
+
+.about-us-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.about-us-image div {
+    padding: 32px 64px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about-us-image-1 {
+    border-bottom: 8px solid #FFE5FB;
+    background-image: url("../../assets/bg-1.png");
+}
+
+.about-us-image-2 {
+    background-image: url("../../assets/bg-2.png");
+}
+
+.img-1 {
+    width: 300px;
+    height: 230px;
+}
+
+.img-2 {
+    width: 345px;
+    height: 260px;
+}
+
+.learn-more {
+    position: absolute;
+    right: 0;
+    padding: 12px 32px;
+    min-height: 50px;
+    background-color: palevioletred;
+    border-radius: 32px 0 0 32px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    cursor: pointer;
+
+}
+
+.learn-more img {
+    object-fit: contain;
+    padding-left: 12px;
+}
+
+.about-us-content {
+    padding: 64px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.9;
+
+}
+
+.content-subtitle {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    margin-top: 8px;
+}
+
+.content-description {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    margin-top: 16px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .about-us-content {
+        padding: 32px;
+    }
+
+    .content-title {
+        font-size: 16px;
+    }
+
+    .content-subtitle {
+        font-size: 40px;
+    }
+
+    .content-description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about-us-image {
+        flex: 0 0 auto;
+        min-height: 300px;
+    }
+
+    .about-us-image div {
+        padding: 23px;
+    }
+
+    .img-1 {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        padding-left: 45px;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: auto;
+        max-width: 345px;
+        padding-left: 45px;
+    }
+
+    .learn-more img {
+        padding-left: 8px;
+    }
+}
