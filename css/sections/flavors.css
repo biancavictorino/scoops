@@ -1,0 +1,102 @@
+.flavors-section {
+    display: flex;
+    min-height: 590px;
+    overflow: hidden;
+}
+
+.banner {
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 900;
+    color: var(--color-white);
+    background-color: palevioletred;
+    padding: 12px;
+    margin: 0;
+    overflow: hidden;
+
+    white-space: nowrap;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 999;
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+
+.flavors-section div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-family: var(--plus-jakarta-sans);
+    min-width: 25%;
+    margin: 0;
+    padding: 15px 0 15px 15px;
+}
+
+.flavors-section h4 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.chocolate, .mint-choco {
+    background-color: var(--color-white);
+    color: palevioletred;
+    background-image: url("../../assets/bg-1.png");
+    background-size: cover;
+}
+
+.strawberry, .rocky-road {
+    background-image: url("../../assets/bg-1.png");
+    background-size: cover;
+}
+
+.chocolate img {
+    height: 230px;
+    width: 250px;
+    margin: 15px;
+}
+
+.strawberry img {
+    height: 240px;
+    width: 260px;
+    margin: 15px;
+}
+
+.mint-choco img {
+    height: 230px;
+    width: 250px;
+    margin: 15px;
+}
+
+.rocky-road img {
+    height: 240px;
+    width: 260px;
+    margin: 15px;
+}
+
+.flavors-section p {
+    margin: 4px 10px 0 0;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flavors-section {
+        flex-direction: column;
+    }
+
+    .flavors-section img {
+        margin-left: 80px;
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+}
