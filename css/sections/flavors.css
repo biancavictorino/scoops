@@ -87,6 +87,17 @@
     font-size: 14px;
 }
 
+.strawberry, .rocky-road p {
+    line-height: 30px;
+    font-weight: 100;
+    color: var(--secondary-color);
+}
+
+.chocolate, .mint-choco p {
+    line-height: 30px;
+    font-weight: 100;
+}
+
 @media only screen and (max-width: 600px) {
     .flavors-section {
         flex-direction: column;
