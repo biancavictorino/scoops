@@ -1,0 +1,284 @@
+.menu {
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--plus-jakarta-sans);
+}
+
+.menu-intro {
+    display: flex;
+    background-color: var(--color-white);
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 20px 90px;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+}
+
+.menu-icon img {
+    height: 16rem;
+    width: 16rem;
+}
+
+.menu-content {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-content h2 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 0.75rem;
+}
+
+.menu-content h1 {
+    font-size: 26px;
+    padding-bottom: 0.75rem;
+}
+
+.menu-content p {
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 200;
+    width: 70%;
+    text-align: left;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "card-1 card-2 card-3" "card-4 card-5 card-6";
+    height: 100%;
+    width: 75%;
+    margin-bottom: 1.5rem;
+}
+
+.card-container img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.card-1 {
+    grid-area: card-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-1:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-1 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.card-2 {
+    grid-area: card-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-2:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-2 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.card-3 {
+    grid-area: card-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-3:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-3 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.card-4 {
+    grid-area: card-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-4:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-4 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.card-5 {
+    grid-area: card-5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-5:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-5 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.card-6 {
+    grid-area: card-6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: palevioletred;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-6:hover .hidden-text {
+    visibility: visible;
+}
+
+.card-6 .hidden-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 22px;
+    font-size: 15px;
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: rgba(219, 112, 147, 0.9);
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.divider {
+    width: 100%;
+    color: palevioletred;
+    background-color: palevioletred;
+}

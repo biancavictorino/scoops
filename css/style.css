@@ -5,7 +5,7 @@
 @import url("sections/hero.css");
 @import url("sections/about.css");
 @import url("sections/flavors.css");
-
+@import url("sections/menu.css");
 
 :root {
     --playfair-display: "Playfair Display", serif;
