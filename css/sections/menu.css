@@ -10,7 +10,6 @@
 .menu-intro {
     display: flex;
     background-color: var(--color-white);
-    /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
@@ -303,37 +302,50 @@
 
     .card-container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
-        grid-template-areas: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas: "card-1 card-2" "card-3 card-4" "card-5 card-6";
         height: 100vh;
         width: 100%;
-        margin-bottom: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .card-container img {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .card-container h1 {
+        font-size: 0.75rem;
+    }
+
+    .card-container p {
+        font-size: 0.45rem;
     }
 
     .card-1 {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: card-1;
     }
 
     .card-2 {
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: card-2;
     }
 
     .card-3 {
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: card-3;
     }
 
     .card-4 {
-        grid-area: 4 / 1 / 5 / 2;
+        grid-area: card-4;
     }
 
     .card-5 {
-        grid-area: 5 / 1 / 6 / 2;
+        grid-area: card-5;
     }
 
     .card-6 {
-        grid-area: 6 / 1 / 7 / 2;
+        grid-area: card-6;
     }
 
 }
