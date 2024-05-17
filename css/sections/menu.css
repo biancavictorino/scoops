@@ -306,9 +306,9 @@
         grid-template-rows: 1fr 1fr 1fr;
         gap: 20px 20px;
         grid-template-areas: "card-1 card-2" "card-3 card-4" "card-5 card-6";
-        height: 100vh;
+        height: 100%;
         width: 100%;
-        padding: 0 2rem;
+        padding: 0 2rem 1rem 2rem;
     }
 
     .card-container img {
@@ -353,5 +353,4 @@
         font-size: 0.65rem;
         line-height: 0.90rem;
     }
-
 }
