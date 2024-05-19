@@ -5,10 +5,11 @@
     flex-direction: row;
     justify-content: center;
     font-family: var(--plus-jakarta-sans);
+    position: relative;
 }
 
 .contact-bg img {
-    width: 95%;
+    width: 100%;
 }
 
 .contact-bg {
@@ -55,8 +56,6 @@
     width: 90%;
 }
 
-
-
 .contact-section .contact-form input, textarea {
     border-radius: 8px;
     outline: none;
@@ -88,5 +87,21 @@
         height: auto;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-section .contact-form {
+        margin-top: 5rem;
+    }
+
+    .contact-bg {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
     }
 }

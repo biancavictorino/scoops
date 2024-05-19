@@ -1,6 +1,7 @@
 .header-nav {
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
 .header-logo {
