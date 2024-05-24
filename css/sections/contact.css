@@ -6,6 +6,7 @@
     justify-content: center;
     font-family: var(--plus-jakarta-sans);
     position: relative;
+    overflow: hidden;
 }
 
 .contact-bg img {

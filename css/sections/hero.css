@@ -3,6 +3,7 @@
     min-height: calc(100vh - 74px);
     overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-image {
