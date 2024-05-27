@@ -1,12 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector('.header-menu');
+    const links = document.querySelector('.menu-link');
 
     hamburger.addEventListener('click', function() {
-        menu.classList.toggle('show')
+        menu.classList.toggle('show');
+    })
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('show');
+        })
     })
     
 })
+
 
 
 const observer = new IntersectionObserver((entries) => {
