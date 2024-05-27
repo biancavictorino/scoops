@@ -1,6 +1,7 @@
 .header-nav {
     display: flex;
     overflow: hidden;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -14,6 +15,10 @@
 .header-menu {
     display: flex;
     flex-direction: row;
+}
+
+.header-menu a:hover {
+    color: palevioletred;
 }
 
 .header-logo h4 {
@@ -40,16 +45,15 @@
     z-index: 1;
 }
 
-.header-menu,
-.header-menu-mobile {
-  padding: 20px;
-  padding-left: 115px;
-  /* flex: 1; */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 120px;
-  list-style: none;
+.header-menu {
+    padding: 20px;
+    padding-left: 115px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 120px;
+    list-style: none;
 }
 
 .header-menu li {
@@ -62,39 +66,64 @@
     cursor: pointer;
   }
 
-  .header-menu-mobile {
+  .hamburger {
     display: none;
-    gap: 20px;
-    position: relative;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
   }
+
+  .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-white);
+  }
+
 
   @media only screen and (max-width: 600px) {
     .header-nav {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--primary-color);
     }
 
     .header-menu {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-white);
+        color: var(--primary-color);
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        z-index: 100;
+        position: fixed;
+        left: -100%;
+        gap: 0;
+        transition: 0.3s;
+    }
+
+    .header-menu.show {
+        display: flex;
+        left: 0;
     }
 
     .header-logo-overlay {
-        width: 600px;
+        width: 100%;
     }
 
-    /* .header-menu-mobile {
-        display: flex;
+    .hamburger {
+        display: block;
     }
-
-    .header-menu-mobile li {
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .header-menu-mobile,
-    .header-menu-mobile li {
-        padding: 10px;
-    } */
 }
 
 
