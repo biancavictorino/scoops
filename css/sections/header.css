@@ -110,7 +110,7 @@
         position: fixed;
         left: -100%;
         gap: 0;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
     }
 
     .header-menu li {
@@ -120,6 +120,10 @@
     .header-menu.show {
         display: flex;
         left: 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
     }
 
     .header-logo-overlay {

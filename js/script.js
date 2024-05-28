@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const menu = document.querySelector('.header-menu');
-    const links = document.querySelector('.menu-link');
+    const links = document.querySelectorAll('.menu-link');
+    const body = document.body
 
     hamburger.addEventListener('click', function() {
         menu.classList.toggle('show');
+        body.classList.toggle('no-scroll');
     })
 
     links.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('show');
+            body.classList.remove('no-scroll');
         })
     })
     
